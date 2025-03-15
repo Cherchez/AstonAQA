@@ -23,6 +23,6 @@ public class TelephoneDirectory {
     }
 
     public List<String> get(String lastName) {
-        return phoneBook.getOrDefault(lastName, new ArrayList<>()); // Возвращает пустой список, если фамилия не найдена
+        return TelephoneDirectory.getOrDefault(lastName, new ArrayList<>());
     }
 }
