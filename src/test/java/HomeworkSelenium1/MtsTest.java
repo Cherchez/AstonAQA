@@ -72,10 +72,10 @@ public class MtsTest {
         Assert.assertEquals(actualSuccessful, "или используйте карту",
                 "Payment window hasn't opened");
     }
-//    @AfterMethod(alwaysRun = true)
-//    public void tearDown() {
-//        if (driver != null) {
-//            driver.quit();
-//        }
-//    }
+    @AfterMethod(alwaysRun = true)
+    public void tearDown() {
+        if (driver != null) {
+            driver.quit();
+        }
+    }
 }
